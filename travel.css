@@ -1,0 +1,12 @@
+
+        .trta{
+            background: grey;
+        }
+        
+        div{
+            display:flex;
+        }
+
+        span{
+            color:red;
+        }
