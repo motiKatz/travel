@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TRAVEL</title>
+    <link rel="stylesheet" type="text/css" href="travel.css" />
+    <script  src="travel.js"></script>
+</head>
+<body>
+    <div>
+    <table border="1" class="trta">
+        <tr>
+            <th>Travel code</th>
+            <th>Travel destination</th>
+            <th>Travel price</th>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>New York</td>
+            <td>1500$</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Prague</td>
+            <td>399$</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Vienna</td>
+            <td>650$</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>Mumbai</td>
+            <td>1329$</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td>London</td>
+            <td>1450$</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Amsterdam</td>
+            <td>789$</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>Ukraine</td>
+            <td>699$</td>
+        </tr>
+        <tr>
+            <td>06</td>
+            <td>Barcelona</td>
+            <td>1289$</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>Cyprus</td>
+            <td>299$</td>
+        </tr>
+    </table>
+</div>
+<br>
+<br>
+
+    <div>
+        
+          <fieldset>
+                <legend>Order tickets:</legend>
+        <span>*</span> Customer name : <br>
+        <input type="text" size="25" accept="name" id="cn">
+        <br>
+        <span>*</span> parsonal ID : <br>
+        <input type="text" size="25" id="pi">
+        <br>
+        <span>*</span> Number of tickets : <br>
+        <input type="text" size="25" accept="Number"id="not">
+        <br>
+        <span>*</span> Travel code : <br>
+        <input type="text" size="25" accept="Number" id="tc">
+        <br><br>
+        <button onclick="makeAnOrder()">send</button>
+          </fieldset>    
+    </div>
+
+    <br>
+    <br>
+        <div>
+           <fieldset>
+               <legend>Order search</legend>
+                Your name 
+               <input type="text" size="25" accept="name" id="name">
+               <button onclick="Search()">find</button>
+
+               <br>
+               <br>
+               <br>
+               
+
+               <table border="1" id="search">
+                   <tr>
+                       <td>order number</td>
+                       <td>Customer name</td>
+                       <td>Travel destination</td>
+                       <td>Total price</td>
+                   </tr>
+               </table>
+            </div>
+
+    <br>
+    <br>
+    <table border="1" class="orders" id="ord">
+            <tr>
+                <th>order number</th>
+                <th>Customer name</th>
+                <th>Travel destination</th>
+                <th>Number of tickets</th>
+                <th>parsonal ID</th>
+                <th>Total price</th>
+             </tr>
+
+    
+</body>
+</html>
